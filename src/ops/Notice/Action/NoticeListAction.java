@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import common.Action;
 import common.ActionForward;
 import ops.Notice.Beans.Notice;
-
+//공고 리스트 Action
 public class NoticeListAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		ActionForward forward = null;
