@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import common.Action;
 import common.ActionForward;
 import ops.board.Beans.Board;
-
+//1:1ê²Œì‹œíŒ ë‹µê¸€ë‹¬ê¸° Action
 public class BoardReplyAction implements Action {
 	public ActionForward execute(HttpServletRequest request,HttpServletResponse response) throws Exception{
 		BoardReplyService brps = new BoardReplyService();
@@ -22,7 +22,7 @@ public class BoardReplyAction implements Action {
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out=response.getWriter();
 			out.println("<script>");
-			out.println("alert('Á¢±Ù½ÇÆĞ');");
+			out.println("alert('ì ‘ê·¼ì‹¤íŒ¨');");
 			out.println("history.back();");
 			out.println("</script>");
 		}
@@ -38,7 +38,7 @@ public class BoardReplyAction implements Action {
 				response.setContentType("text/html;charset=UTF-8");
 				PrintWriter out = response.getWriter();
 				out.println("<script>");
-				out.println("alert('´ñ±Û´Ş±â½ÇÆĞ.');");
+				out.println("alert('ë‹µê¸€ë‹¬ê¸°ì‹¤íŒ¨.');");
 				out.println("history.back()");
 				out.println("</script>");						
 			}
