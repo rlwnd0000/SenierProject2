@@ -9,7 +9,7 @@ import common.Action;
 import common.ActionForward;
 import ops.Question.Beans.Question;
 
-
+//Q&A작성 Action
 public class QuestionWriteAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		ActionForward forward = null;
