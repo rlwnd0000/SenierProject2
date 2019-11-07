@@ -72,7 +72,7 @@ public class AnnouncementData {
 		return announcementList;
 	}
 	
-	public Announcement selectAnnouncementDetail(int a_no) { //공지사항
+	public Announcement selectAnnouncementDetail(int a_no) { //공지사항조회
 		Announcement a = null;
 		try {
 			String sql = "select * from announcement where a_no=?";
