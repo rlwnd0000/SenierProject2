@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import ops.announcement.Beans.Announcement;
 
-
+//공지사항 DAO
 public class AnnouncementData {
 	Connection con;
 	PreparedStatement ps = null;
@@ -72,7 +72,7 @@ public class AnnouncementData {
 		return announcementList;
 	}
 	
-	public Announcement selectAnnouncementDetail(int a_no) {
+	public Announcement selectAnnouncementDetail(int a_no) { //공지사항
 		Announcement a = null;
 		try {
 			String sql = "select * from announcement where a_no=?";
@@ -99,7 +99,7 @@ public class AnnouncementData {
 			return a;
 		}
 	
-	public boolean isAnnouncementNo(int a_no){ //공지사항번호조회
+	public boolean isAnnouncementNo(int a_no){ //공지사항번호확인
 		String sql="select * from announcement where a_no=?";
 		boolean isNo = false;
 			
