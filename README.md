@@ -17,8 +17,11 @@
 - src/ops/announcement -> 관리자 페이지의 공지사항 작성, 수정, 조회, 삭제<br>
 - src/ops/Question -> 관리자 페이지의 Q&A 작성, 수정, 조회, 삭제<br>
 - src/ops/board -> 1:1 문의 게시판 작성, 수정, 조회, 삭제, 답변달기<br>
-- src/Controller -> Controller
-- SenierProject2/WebContent/~.jsp -> View
+- src/ops/controller -> Controller
+- src/ops/~/Beans -> Vo
+- src/ops/~/Action -> Action
+- src/ops/~/Service -> Service
+- src/ops/~/Action/~Data -> DAO
 
 ### 프로젝트 주요기능<br>
 일반회원
