@@ -22,6 +22,7 @@
 - src/ops/~/Action -> Action
 - src/ops/~/Service -> Service
 - src/ops/~/Action/~Data -> DAO
+- SenierProject2/WebContent/~.jsp -> View
 
 ### 프로젝트 주요기능<br>
 일반회원
