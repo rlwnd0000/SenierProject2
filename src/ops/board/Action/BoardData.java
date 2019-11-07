@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 
 import ops.board.Beans.Board;
-
+//1:1ê²Œì‹œíŒ DAO
 public class BoardData {
 	Connection con;
 	PreparedStatement ps = null;
@@ -24,7 +24,7 @@ public class BoardData {
 		this.con = con;
 	}
 	
-	public int insertBoard(Board b) { //1:1°Ô½ÃÆÇÀÛ¼º 
+	public int insertBoard(Board b) { //1:1ê²Œì‹œíŒì‘ì„± 
 		int x = 0;
 		try {
 			String sql = "insert into board values(null,?,?,?,?,?,null)";
@@ -43,7 +43,7 @@ public class BoardData {
 		return x;
 	}
 		
-	public ArrayList<Board> selectBoardList(){ //1:1°Ô½ÃÆÇ¸®½ºÆ®
+	public ArrayList<Board> selectBoardList(){ //1:1ê²Œì‹œíŒë¦¬ìŠ¤íŠ¸
 		String sql="select board_no, board_id, board_title, board_content, board_img, board_date, board_reply from board";
 		ArrayList<Board> boardList = new ArrayList<Board>();
 		try{
@@ -71,7 +71,7 @@ public class BoardData {
 		return boardList;
 	}
 		
-	public Board selectBoardDetail(int board_no) { //1:1°Ô½ÃÆÇÁ¶È¸
+	public Board selectBoardDetail(int board_no) { //1:1ê²Œì‹œíŒì¡°íšŒ
 		Board b = null;
 		try {
 			String sql = "select * from board where board_no=?";
@@ -98,7 +98,7 @@ public class BoardData {
 			return b;
 		}
 	
-	public boolean isBoardNo(int board_no){ //1:1°Ô½ÃÆÇ ¹øÈ£Á¶È¸
+	public boolean isBoardNo(int board_no){ //1:1ê²Œì‹œíŒ ë²ˆí˜¸í™•ì¸
 		String sql="select * from board where board_no=?";
 		boolean isNo = false;
 			
@@ -118,7 +118,7 @@ public class BoardData {
 		return isNo;
 	}
 	
-	public int updateBoard(Board b){ //1:1°Ô½ÃÆÇ ¾÷µ¥ÀÌÆ®
+	public int updateBoard(Board b){ //1:1ê²Œì‹œíŒ ì—…ë°ì´íŠ¸
 		String sql="update board set board_title=?, board_content=?, board_img=? where board_no=?";
 		int x = 0;
 		try{
@@ -136,7 +136,7 @@ public class BoardData {
 		return x;
 	}
 	
-	public int deleteBoard(int board_no) { //1:1°Ô½ÃÆÇ»èÁ¦
+	public int deleteBoard(int board_no) { //1:1ê²Œì‹œíŒì‚­ì œ
 		String sql = "delete from board where board_no=?";
 		int x = 0;
 		try {
@@ -151,7 +151,7 @@ public class BoardData {
 		return x;
 	}
 	
-	public int updateReply(Board b){ //1:1°Ô½ÃÆÇ ´ñ±Û´Ş±â
+	public int updateReply(Board b){ //1:1ê²Œì‹œíŒ ëŒ“ê¸€ë‹¬ê¸°
 		String sql="update board set board_reply=? where board_no=?";
 		int x = 0;
 		try{
