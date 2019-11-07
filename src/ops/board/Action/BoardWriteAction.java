@@ -12,7 +12,7 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import common.Action;
 import common.ActionForward;
 import ops.board.Beans.Board;
-
+//1:1게시판 작성 Action
 public class BoardWriteAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		ActionForward forward = null;
