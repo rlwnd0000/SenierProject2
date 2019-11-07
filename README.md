@@ -13,13 +13,10 @@
 - 1:1 문의 게시판 작성, 수정, 조회, 삭제, 답변달기를 맡아 담당하였습니다.<br>
 
 ### 구성파일<br>
-- 공고작성, 수정, 리스트보기, 조회, 삭제<br>
-- 관리자 페이지의 공지사항 작성, 수정, 조회, 삭제<br>
-- 관리자 페이지의 Q&A 작성, 수정, 조회, 삭제<br>
-- 1:1 문의 게시판 작성, 수정, 조회, 삭제, 답변달기<br>
-- src/ops/MemberCareer/Action/~Action -> action
-- src/ops/MemberCareer/Action/~Data -> DAO
-- src/ops/MemberCareer/Beans -> vo
+- src/ops/Notice -> 공고작성, 수정, 리스트보기, 조회, 삭제<br>
+- src/ops/announcement -> 관리자 페이지의 공지사항 작성, 수정, 조회, 삭제<br>
+- src/ops/Question -> 관리자 페이지의 Q&A 작성, 수정, 조회, 삭제<br>
+- src/ops/board -> 1:1 문의 게시판 작성, 수정, 조회, 삭제, 답변달기<br>
 - src/Controller -> Controller
 - SenierProject2/WebContent/~.jsp -> View
 
