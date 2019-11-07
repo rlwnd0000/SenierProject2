@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import common.Action;
 import common.ActionForward;
 import ops.board.Beans.Board;
-
+//1:1게시판 리스트 Action
 public class BoardListAction implements Action{
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		ActionForward forward = null;
