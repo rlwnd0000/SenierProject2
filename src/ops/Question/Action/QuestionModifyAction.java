@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import common.Action;
 import common.ActionForward;
 import ops.Question.Beans.Question;
-
+//Q&A 수정폼 Action
 public class QuestionModifyAction implements Action {
 	public ActionForward execute(HttpServletRequest request,HttpServletResponse response) throws Exception{
 		QuestionDetailService qds = new QuestionDetailService();
