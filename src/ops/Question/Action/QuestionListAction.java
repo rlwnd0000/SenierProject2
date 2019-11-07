@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import common.Action;
 import common.ActionForward;
 import ops.Question.Beans.Question;
-
+//Q&A 리스트 Action
 public class QuestionListAction implements Action{
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		ActionForward forward = null;
