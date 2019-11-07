@@ -12,7 +12,7 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import common.Action;
 import common.ActionForward;
 import ops.announcement.Beans.Announcement;
-
+//공지사항작성 Action
 public class AnnouncementWriteAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		ActionForward forward = null;
