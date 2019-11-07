@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import common.Action;
 import common.ActionForward;
-
+//1:1ê²Œì‹œíŒì‚­ì œ Action
 public class BoardDeleteAction implements Action{
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		
@@ -19,7 +19,7 @@ public class BoardDeleteAction implements Action{
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out = response.getWriter();
 			out.println("<script>");
-			out.println("alert('»èÁ¦½ÇÆĞ');");
+			out.println("alert('ì‚­ì œì‹¤íŒ¨');");
 			out.println("history.back();");
 			out.println("</script>");
 		}else {
