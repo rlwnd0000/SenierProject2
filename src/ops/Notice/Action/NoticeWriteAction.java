@@ -14,7 +14,7 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import common.Action;
 import common.ActionForward;
 import ops.Notice.Beans.Notice;
-
+//ê³µê³ ìž‘ì„± Action
 public class NoticeWriteAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		ActionForward forward = null;
@@ -66,7 +66,7 @@ public class NoticeWriteAction implements Action {
 			response.setContentType("text/html;charset = UTF-8");
 			PrintWriter out = response.getWriter();
 			out.println("<script>");
-			out.println("alert('ÀÛ¼º½ÇÆÐ');");
+			out.println("alert('ê³µê³ ìž‘ì„±ì‹¤íŒ¨');");
 			out.println("history.back();");
 			out.println("</script>");
 		}
