@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 import ops.Notice.Beans.Notice;
 
-
+//공고 DAO
 public class NoticeData {
 	Connection con;
 	PreparedStatement ps = null;
@@ -26,7 +26,7 @@ public class NoticeData {
 		this.con = con;
 	}
 	
-	public int insertNotice(Notice n) { //怨듦퀬�옉�꽦 26
+	public int insertNotice(Notice n) { //공고작성
 		int x = 0;
 		try {
 			String sql = "insert into notice values(null,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,null)";
@@ -65,7 +65,7 @@ public class NoticeData {
 		return x;
 	}
 	
-	public ArrayList<Notice> selectNoticeList(){ //怨듦퀬由ъ뒪�듃
+	public ArrayList<Notice> selectNoticeList(){ //공고리스트
 		String sql="select n_no, n_title, n_date, n_comName, n_ceoName, n_address, n_job, n_reCruit, n_field, n_gender, n_age, n_acadamiBg, n_endDate, n_sal, n_workTerm, n_workDay, n_workTime, n_workForm, n_name, n_email, n_phone, n_supportForm, n_bigo, n_content from notice";
 		ArrayList<Notice> noticeList = new ArrayList<Notice>();
 		try{
@@ -111,7 +111,7 @@ public class NoticeData {
 		return noticeList;
 	}
 	
-	public Notice selectNoticeDetail(int n_no) { //怨듦퀬 議고쉶
+	public Notice selectNoticeDetail(int n_no) { //공고조회
 		Notice n = null;
 		try {
 			String sql = "select * from notice where n_no=?";
@@ -149,7 +149,7 @@ public class NoticeData {
 				n.setEn_no(rs.getInt("en_no"));	
 			}
 		}catch(Exception e) {
-			System.out.println("공고조회:" + e);
+			System.out.println("공고조회오류:" + e);
 		}finally {
 			close(rs);
 			close(ps);
@@ -157,8 +157,7 @@ public class NoticeData {
 		return n;
 	}
 	
-	public boolean isNoticeNo(int n_no){ //怨듦퀬 踰덊샇 �솗�씤
-
+	public boolean isNoticeNo(int n_no){ //공고번호확인
 		String sql="select * from Notice where n_no=?";
 		boolean isNo = false;
 			
@@ -178,7 +177,7 @@ public class NoticeData {
 		return isNo;
 	}
 	
-	public int updateNotice(Notice detail){ //怨듦퀬�닔�젙
+	public int updateNotice(Notice detail){ //공고수정
 
 		int x = 0;
 		String sql="update Notice set n_title=?, n_content=?, n_img=?, n_comName=?, n_ceoName=?, n_address=?, n_job=?, n_reCruit=?, n_field=?, n_gender=?, n_age=?, n_acadamiBg=?, n_sal=?, n_endDate=?, n_workTerm=?, n_workDay=?, n_workTime=?, n_workForm=?, n_name=?, n_email=?, n_phone=?, n_supportForm=?, n_bigo=? where n_no=?";
@@ -218,7 +217,7 @@ public class NoticeData {
 		return x;
 	}
 	
-	public int deleteNotice(int n_no){ //怨듦퀬�궘�젣
+	public int deleteNotice(int n_no){ //공고삭제
 		String sql="delete from Notice where n_no=?";
 		int x = 0;
 
