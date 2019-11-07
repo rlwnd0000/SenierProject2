@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import common.Action;
 import common.ActionForward;
-
+//ê³µê³ ì‚­ì œ Action
 public class NoticeDeleteAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		
@@ -19,7 +19,7 @@ public class NoticeDeleteAction implements Action {
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out = response.getWriter();
 			out.println("<script>");
-			out.println("alert('»èÁ¦½ÇÆÐ');");
+			out.println("alert('ê³µê³ ì‚­ì œì‹¤íŒ¨');");
 			out.println("history.back();");
 			out.println("</script>");
 		}else {
