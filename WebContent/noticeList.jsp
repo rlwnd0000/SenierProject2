@@ -28,15 +28,7 @@ a{text-decoration:none;
 }
 </style>
 </head>
-<body>
-<form action="" method="post">
-   <select name="searchOption" id="selectBox" style="width:100px;">   
-         <option value="시도를입력하세요">서울특별시</option>  
-         <option>경기도</option>
-         <option>대전광역시</option>   
-   </select>
-   <input type="text" name = "keyword">
-   <input type="submit" value="검색"><br><br>
+<body>   
 <div style="overflow-x:hidden">
 <table border="1">	
 	<c:forEach var = "noticeList" items="${noticeList}">
@@ -93,7 +85,6 @@ a{text-decoration:none;
 		<td>${noticeList.n_content}</td>
 	</c:forEach>
 </table>   
-</form>
 </div>
 </body>
 </html>
