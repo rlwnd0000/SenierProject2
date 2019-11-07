@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import common.Action;
 import common.ActionForward;
-//공지사항 삭제
+//공지사항 삭제 Action
 public class AnnouncementDeleteAction implements Action{
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		
