@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import common.Action;
 import common.ActionForward;
 import ops.Question.Beans.Question;
-
+//Q&A ìˆ˜ì • Action
 public class QuestionModifyProAction implements Action {
 	public ActionForward execute(HttpServletRequest request,HttpServletResponse response) throws Exception{
 		QuestionModifyProService qmps = new QuestionModifyProService();
@@ -22,7 +22,7 @@ public class QuestionModifyProAction implements Action {
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out=response.getWriter();
 			out.println("<script>");
-			out.println("alert('Á¢±Ù½ÇÆÐ');");
+			out.println("alert('ì ‘ê·¼ì‹¤íŒ¨');");
 			out.println("history.back();");
 			out.println("</script>");
 		}
@@ -39,7 +39,7 @@ public class QuestionModifyProAction implements Action {
 				response.setContentType("text/html;charset=UTF-8");
 				PrintWriter out = response.getWriter();
 				out.println("<script>");
-				out.println("alert('¼öÁ¤½ÇÆÐ.');");
+				out.println("alert('ìˆ˜ì •ì‹¤íŒ¨');");
 				out.println("history.back()");
 				out.println("</script>");						
 			}
