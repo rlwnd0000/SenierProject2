@@ -2,16 +2,13 @@ package ops.Question.Action;
 
 import static common.ConUtilDAO.close;
 import static common.ConUtilDAO.getConnection;
-
 import java.sql.Connection;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import common.Action;
 import common.ActionForward;
 import ops.Question.Beans.Question;
-
+// Q&A 조회 Action
 public class QuestionDetailAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		int q_no = Integer.parseInt(request.getParameter("q_no"));
