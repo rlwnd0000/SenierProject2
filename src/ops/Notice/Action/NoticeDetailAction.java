@@ -12,7 +12,7 @@ import common.Action;
 import common.ActionForward;
 import ops.Notice.Beans.Notice;
 
-
+//공고조회 Action
 public class NoticeDetailAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		int n_no = Integer.parseInt(request.getParameter("n_no"));
