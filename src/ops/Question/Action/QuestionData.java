@@ -8,8 +8,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 
 import ops.Question.Beans.Question;
-
-
+//Q&A DAO
 public class QuestionData {
 	Connection con;
 	PreparedStatement ps = null;
