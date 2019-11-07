@@ -12,7 +12,7 @@ import common.Action;
 import common.ActionForward;
 import ops.announcement.Beans.Announcement;
 
-
+//공지사항 조회 Action
 public class AnnouncementDetailAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		int a_no = Integer.parseInt(request.getParameter("a_no"));
