@@ -6,16 +6,16 @@ import javax.servlet.http.HttpServletResponse;
 import common.Action;
 import common.ActionForward;
 import ops.announcement.Beans.Announcement;
-
+//공지사항 수정폼 Action
 public class AnnouncementModifyAction implements Action {
 	public ActionForward execute(HttpServletRequest request,HttpServletResponse response) throws Exception{
 		
 		AnnouncementDetailService ads = new AnnouncementDetailService();
 		int a_no = Integer.parseInt(request.getParameter("a_no"));
-	    Announcement a = ads.getAnnouncement(a_no);
-	    request.setAttribute("a", a);
+	    	Announcement a = ads.getAnnouncement(a_no);
+	   	request.setAttribute("a", a);
 	   	
-	    ActionForward forward = new ActionForward("announcementModify.jsp",false);
+	    	ActionForward forward = new ActionForward("announcementModify.jsp",false);
    		return forward; 		
 	 }
 }
