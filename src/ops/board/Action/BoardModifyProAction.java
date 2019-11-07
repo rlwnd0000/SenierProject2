@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import common.Action;
 import common.ActionForward;
 import ops.board.Beans.Board;
-
+//1:1ê²Œì‹œíŒ ìˆ˜ì • Action
 public class BoardModifyProAction implements Action {
 	public ActionForward execute(HttpServletRequest request,HttpServletResponse response) throws Exception{
 		BoardModifyProService bmps = new BoardModifyProService();
@@ -22,7 +22,7 @@ public class BoardModifyProAction implements Action {
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out=response.getWriter();
 			out.println("<script>");
-			out.println("alert('Á¢±Ù½ÇÆĞ');");
+			out.println("alert('ì ‘ê·¼ì‹¤íŒ¨');");
 			out.println("history.back();");
 			out.println("</script>");
 		}
@@ -40,7 +40,7 @@ public class BoardModifyProAction implements Action {
 				response.setContentType("text/html;charset=UTF-8");
 				PrintWriter out = response.getWriter();
 				out.println("<script>");
-				out.println("alert('¼öÁ¤½ÇÆĞ.');");
+				out.println("alert('ìˆ˜ì •ì‹¤íŒ¨');");
 				out.println("history.back()");
 				out.println("</script>");						
 			}
